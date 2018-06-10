@@ -7,8 +7,13 @@
 @endsection
 
 @section('content')
-<div class="container">
-
+<div class="banner">
+    <div class="overlay-container">
+        <img src="{{ asset('img/banner.jpg') }}" alt="adopt-a-pet">
+        <div class="overlay-content">
+            This is subtitle
+        </div>
+    </div>
 </div>
 @endsection
 
