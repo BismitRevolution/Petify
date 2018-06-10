@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}">
         <!-- Lightbox -->
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.css') }}"> -->
+        <!-- Animation -->
+        <link rel="stylesheet" href="{{ asset('css/vendor/animate.min.css') }}">
         <!-- Basic Style -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Navbar Style -->
@@ -66,6 +68,9 @@
         <!-- Fred Carousel -->
         <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script>
 
+        <!-- GreenSock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/utils/Draggable.min.js"></script>
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>

@@ -1,0 +1,44 @@
+nav {
+    position: fixed;
+    z-index: 10;
+}
+
+nav .menu-logo {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    max-width: 80px
+}
+
+nav .menu {
+    position: fixed;
+    right: 0;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover, nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    padding: 35px;
+    border-bottom: 5px solid;
+    border-bottom-color: rgba(var(--color-light-rgb), 0);
+}
+
+nav li:hover {
+    color: white;
+    border-bottom-color: rgba(var(--color-light-rgb), 0.6);
+}
+
+#menu-layer {
+    position: fixed;
+    background-color: var(--color-pink);
+    height: 55px;
+    width: 100%;
+    z-index: -1;
+}

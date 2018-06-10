@@ -1,3 +1,39 @@
 body {
-    background-color: #8C2648;
+    background-color: var(--color-maroon);
+    color: var(--color-light);
+}
+
+.overlay-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-container img {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay-content {
+    position: relative;
+    margin: 0 auto;
+}
+
+.parallax-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    position: relative;
+    margin: 0 auto;
 }

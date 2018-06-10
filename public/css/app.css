@@ -1,7 +1,21 @@
 :root {
     --color-primary: #9E87CE;
+    --color-primary-rgb: 158, 135, 206;
     --color-light: #F2F2F2;
+    --color-light-rgb: 242, 242, 242;
     --color-dark: #333333;
+    --color-dark-rgb: 51, 51, 51;
+
+    --color-purple: #50105C;
+    --color-purple-rgb: 80, 16, 92;
+    --color-maroon: #8C2648;
+    --color-maroon-rgb: 140, 38, 72;
+    --color-pink: #FC4A6C;
+    --color-pink-rgb: 252, 74, 108;
+    --color-corn: #CC9308;
+    --color-corn-rgb: 204, 147, 8;
+    --color-lemon: #F4C237;
+    --color-lemon-rgb: 244, 194, 55;
 }
 
 @font-face {
