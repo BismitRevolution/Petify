@@ -7,39 +7,43 @@ $(document).ready(function () {
     var navLogo = document.getElementsByClassName("menu-logo");
     // var navLayer = document.getElementById("menu-layer");
 
-    if (window.scrollY > threshold) {
-        isShown = true;
-        TweenLite.to(navLogo, 0.25, { top: -10 })
+    var isAnimationActive = !window.Util.isMobile();
 
+    function showNavbar() {
+        TweenLite.to(navLogo, 0.25, { top: -10 })
         TweenLite.to(navItem, 0.25, { padding: 20 })
         TweenLite.to(navItem, 0.25, { paddingBottom: 15 })
         $("#menu-layer").removeClass("hidden");
-    } else {
-        isShown = false;
-        TweenLite.to(navLogo, 0.25, { top: 10 })
-
-        TweenLite.to(navItem, 0.25, { padding: 35 })
-        $("#menu-layer").addClass("hidden");
+        isShown = true;
     }
 
-    window.addEventListener('scroll', function(e) {
+    function hideNavbar() {
+        TweenLite.to(navLogo, 0.25, { top: 10 })
+        TweenLite.to(navItem, 0.25, { padding: 35 })
+        $("#menu-layer").addClass("hidden");
+        isShown = false;
+    }
+
+    if (isAnimationActive) {
         if (window.scrollY > threshold) {
-            if (!isShown) {
-                TweenLite.to(navLogo, 0.25, { top: -10 })
-
-                TweenLite.to(navItem, 0.25, { padding: 20 })
-                TweenLite.to(navItem, 0.25, { paddingBottom: 15 })
-                isShown = !isShown;
-                $("#menu-layer").removeClass("hidden");
-            }
+            showNavbar();
         } else {
-            if (isShown) {
-                TweenLite.to(navLogo, 0.25, { top: 10 })
-
-                TweenLite.to(navItem, 0.25, { padding: 35 })
-                isShown = !isShown;
-                $("#menu-layer").addClass("hidden");
-            }
+            hideNavbar();
         }
-    });
+
+        window.addEventListener('scroll', function(e) {
+            if (window.scrollY > threshold) {
+                if (!isShown) {
+                    showNavbar();
+                }
+            } else {
+                if (isShown) {
+                    hideNavbar();
+                }
+            }
+        });
+    } else {
+        showNavbar();
+    }
+
 });

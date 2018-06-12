@@ -9,5 +9,11 @@ $(document).ready(function () {
         }
     };
 
+    Util = {
+        isMobile : function () {
+            return (window.innerWidth < 576);
+        }
+    }
+
     console.log("app loaded");
 });
