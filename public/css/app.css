@@ -19,8 +19,38 @@
 }
 
 @font-face {
-    font-family: "Font-Regular";
-    src: url('/fonts/Font-Regular.ttf');
+    font-family: "Droid Regular";
+    src: url('/fonts/droid-sans/DroidSans.ttf');
+}
+
+@font-face {
+    font-family: "Droid Bold";
+    src: url('/fonts/droid-sans/DroidSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Myfrida Regular";
+    src: url('/fonts/myfrida/Myfrida Regular.otf');
+}
+
+@font-face {
+    font-family: "Aller Regular";
+    src: url('/fonts/aller/Aller_Std_Rg.ttf');
+}
+
+@font-face {
+    font-family: "Aller Bold";
+    src: url('/fonts/aller/Aller_Std_Bd.ttf');
+}
+
+@font-face {
+    font-family: "Aller Light";
+    src: url('/fonts/aller/Aller_Std_Lt.ttf');
+}
+
+@font-face {
+    font-family: "Lato Thin";
+    src: url('/fonts/lato/Lato-Thin.ttf');
 }
 
 .bg-primary {
@@ -33,6 +63,14 @@
 
 .bg-dark {
     background: var(--color-dark) !important;
+}
+
+.bg-purple {
+    background: var(--color-purple) !important;
+}
+
+.bg-maroon {
+    background: var(--color-maroon) !important;
 }
 
 .bg-white {
@@ -63,7 +101,7 @@
     color: rgba(255, 255, 255, 0) !important;
 }
 
-.row {
+.row, .cell {
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -105,6 +143,14 @@
     font-style: italic;
 }
 
-body {
-    font-size: 1.3rem;
+.container {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }

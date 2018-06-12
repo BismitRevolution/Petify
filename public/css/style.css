@@ -1,6 +1,11 @@
 body {
     background-color: var(--color-maroon);
-    color: var(--color-light);
+    color: white;
+    font-size: 1.3rem;
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family: "Aller Regular";
 }
 
 .overlay-container {
@@ -19,21 +24,31 @@ body {
 }
 
 .overlay-content {
-    position: relative;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .parallax-container {
     display: block;
     position: relative;
     overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .parallax-content {
-    position: relative;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-family: "Aller Bold";
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-family: "Aller Regular";
+    font-size: 1.6rem;
 }

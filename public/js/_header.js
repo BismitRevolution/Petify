@@ -9,34 +9,34 @@ $(document).ready(function () {
 
     if (window.scrollY > threshold) {
         isShown = true;
-        TweenLite.to(navLogo, 0.5, { top: -10 })
+        TweenLite.to(navLogo, 0.25, { top: -10 })
 
-        TweenLite.to(navItem, 0.5, { padding: 20 })
-        TweenLite.to(navItem, 0.5, { paddingBottom: 15 })
+        TweenLite.to(navItem, 0.25, { padding: 20 })
+        TweenLite.to(navItem, 0.25, { paddingBottom: 15 })
         $("#menu-layer").removeClass("hidden");
     } else {
         isShown = false;
-        TweenLite.to(navLogo, 0.5, { top: 10 })
+        TweenLite.to(navLogo, 0.25, { top: 10 })
 
-        TweenLite.to(navItem, 0.5, { padding: 35 })
+        TweenLite.to(navItem, 0.25, { padding: 35 })
         $("#menu-layer").addClass("hidden");
     }
 
     window.addEventListener('scroll', function(e) {
         if (window.scrollY > threshold) {
             if (!isShown) {
-                TweenLite.to(navLogo, 0.5, { top: -10 })
+                TweenLite.to(navLogo, 0.25, { top: -10 })
 
-                TweenLite.to(navItem, 0.5, { padding: 20 })
-                TweenLite.to(navItem, 0.5, { paddingBottom: 15 })
+                TweenLite.to(navItem, 0.25, { padding: 20 })
+                TweenLite.to(navItem, 0.25, { paddingBottom: 15 })
                 isShown = !isShown;
                 $("#menu-layer").removeClass("hidden");
             }
         } else {
             if (isShown) {
-                TweenLite.to(navLogo, 0.5, { top: 10 })
+                TweenLite.to(navLogo, 0.25, { top: 10 })
 
-                TweenLite.to(navItem, 0.5, { padding: 35 })
+                TweenLite.to(navItem, 0.25, { padding: 35 })
                 isShown = !isShown;
                 $("#menu-layer").addClass("hidden");
             }

@@ -1,6 +1,7 @@
 nav {
     position: fixed;
     z-index: 10;
+    font-family: "Myfrida Regular";
 }
 
 nav .menu-logo {
@@ -32,12 +33,13 @@ nav li {
 
 nav li:hover {
     color: white;
-    border-bottom-color: rgba(var(--color-light-rgb), 0.6);
+    background-color: rgba(var(--color-light-rgb), 0.2);
+    border-bottom-color: rgba(var(--color-light-rgb), 0.8);
 }
 
 #menu-layer {
     position: fixed;
-    background-color: var(--color-pink);
+    background-color: rgba(var(--color-maroon-rgb), 0.5);
     height: 55px;
     width: 100%;
     z-index: -1;
