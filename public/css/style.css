@@ -52,3 +52,9 @@ h1, h2, h3, h4, h5, p {
     font-family: "Aller Regular";
     font-size: 1.6rem;
 }
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+}

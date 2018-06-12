@@ -7,6 +7,11 @@ $(document).ready(function () {
     $("#parallax-top .title").first().addClass("animated fadeIn");
     $("#parallax-top .subtitle").first().addClass("animated zoomIn");
 
+    if (window.Util.isMobile()) {
+        $("#topic-chooser > div > div:first-child").removeClass("align-middle");
+        $("#topic-chooser > div > div:first-child").addClass("align-bottom");
+    }
+
     var chooser = document.getElementsByClassName("chooser");
 
     function setHover(item, index) {

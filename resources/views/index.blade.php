@@ -23,7 +23,7 @@
 </div>
 </div> -->
 
-<div id="topic-chooser" class="bg-maroon container">
+<div id="topic-chooser" class="bg-maroon grid-container">
     <div class="grid-x">
         <div class="cell small-12 medium-4 grid-x align-middle" style="min-height: 75px;">
             <h3 class="cell text-center">ADOPT PET</h3>
@@ -47,10 +47,8 @@
     </div>
 </div>
 
-<div id="pet-list" class="bg-purple container">
-    <div class="grid-x">
-        
-    </div>
+<div id="" class="">
+    
 </div>
 @endsection
 

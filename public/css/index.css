@@ -29,7 +29,10 @@
 
 #parallax-top .title, #parallax-top .subtitle {
     font-family: "Lato Thin";
+}
 
+#topic-chooser h3, #topic-chooser h5 {
+    font-family: "Myfrida Regular";
 }
 
 .chooser {
@@ -48,4 +51,8 @@
 
 .chooser > div {
     height: 100%;
+}
+
+#pet-list .panel {
+    height: 300px;
 }
