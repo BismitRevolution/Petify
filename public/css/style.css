@@ -58,3 +58,37 @@ h1, h2, h3, h4, h5, p {
     border-radius: 10px;
     box-shadow: 0 0 5px #333;
 }
+
+.panel .panel-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* .panel .panel-image:hover {
+    background-size: auto 120%;
+} */
+
+.panel .panel-content {
+    padding: 10px;
+}
+
+.panel .panel-content h1, .panel .panel-content h2, .panel .panel-content h3,
+.panel .panel-content h4, .panel .panel-content h5 {
+    margin: 0px;
+}
+
+.panel .panel-content .panel-subtitle {
+    margin-bottom: 8px;
+}
+
+.panel .panel-content .panel-paragraph p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 20ch; */
+    /* line-height: 1.8rem;
+    max-height: 3.6rem; */
+}
