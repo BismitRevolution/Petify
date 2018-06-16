@@ -73,6 +73,10 @@
     background: var(--color-maroon) !important;
 }
 
+.bg-corn {
+    background: var(--color-corn) !important;
+}
+
 .bg-white {
     background: white !important;
 }
@@ -185,4 +189,53 @@ h5 {
 
 p {
     font-size: 1rem;
+}
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email],
+ [type=month], [type=number], [type=password], [type=search], [type=tel],
+ [type=text], [type=time], [type=url], [type=week], textarea {
+    height: 2.6rem;
+}
+
+.form-round input, .form-round button {
+    border-radius: 10px;
+}
+
+.form-round .round-start {
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.form-round .round-middle {
+    border-radius: 0px;
+}
+
+.form-round .round-end {
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-button:hover {
+    background-color: rgba(var(--color-corn-rgb), 0.6) !important;
+}
+
+.dropdown-pane {
+    padding: 0px;
+}
+
+.dropdown-pane ul {
+    margin: 0px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.dropdown-pane ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+.dropdown-pane ul li:hover {
+    background-color: rgba(var(--color-dark-rgb), 0.1);
 }

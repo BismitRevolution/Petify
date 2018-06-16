@@ -66,7 +66,7 @@
         <script defer src="{{ asset('js/vendor/fontawesome-all.min.js') }}"></script>
 
         <!-- Fred Carousel -->
-        <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script>
+        <!-- <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script> -->
 
         <!-- GreenSock -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>

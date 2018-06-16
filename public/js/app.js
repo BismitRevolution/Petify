@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(document).foundation();
 
     // Parallax Effect
     Parallax = {
@@ -37,6 +38,44 @@ $(document).ready(function () {
             return (top >= 0 && bottom <= window.innerHeight);
         }
     }
+
+    var trailer = document.getElementsByClassName("panel-image");
+
+    function zoomHover(item) {
+        item.onmouseover = function () {
+            TweenLite.to(item, 0.25, { backgroundSize: '+=25%' });
+            // TweenLite.fromTo(item, 0.25, { backgroundSize: 'auto 100%' }, { backgroundSize: 'auto 120%' });
+        }
+
+        item.onmouseleave = function () {
+            TweenLite.to(item, 0.25, { backgroundSize: '-=25%' });
+            // TweenLite.fromTo(item, 0.25, { backgroundSize: 'auto 120%' }, { backgroundSize: 'auto 100%' });
+        }
+    }
+
+    Array.from(trailer).forEach(zoomHover);
+
+    var dropdownButton = document.getElementsByClassName("dropdown-button");
+
+    function setDropdownWidth(item) {
+        item.onclick = function (e) {
+            item.nextElementSibling.style.width = item.offsetWidth + "px";
+        }
+    }
+
+    Array.from(dropdownButton).forEach(setDropdownWidth);
+
+    var dropdownItem = document.getElementsByClassName("dropdown-item");
+
+    function setDropdownClick(item) {
+        item.onclick = function (e) {
+            item.parentNode.parentNode.previousElementSibling.innerHTML = item.innerHTML;
+            item.parentNode.previousElementSibling.value = item.innerHTML;
+            // document.getElementById(item.parentNode.parentNode.getAttribute("data-target")).value = item.innerHTML;
+        }
+    }
+
+    Array.from(dropdownItem).forEach(setDropdownClick);
 
     console.log("app loaded");
 });

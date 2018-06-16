@@ -53,10 +53,34 @@
     height: 300px;
 }
 
-#pet-list .pet {
+#article .panel {
+    height: 500px;
+}
+
+#pet-list .pet, #article .pet {
     visibility: hidden;
     /* display: none; */
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -ms-animation-duration: 1s;
+}
+
+#article .panel-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.banner {
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+
+.banner .title h3 {
+    font-family: "Myfrida Regular";
+    font-size: 3rem;
+}
+
+.banner .subtitle {
+    padding-top: 45px;
+    padding-bottom: 45px;
 }

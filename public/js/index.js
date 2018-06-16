@@ -37,22 +37,6 @@ $(document).ready(function () {
         window.Parallax.parallaxEffect(parallaxBg, base);
     };
 
-    var trailer = document.getElementsByClassName("panel-image");
-
-    function zoomHover(item) {
-        item.onmouseover = function () {
-            TweenLite.to(item, 0.25, { backgroundSize: '+=25%' });
-            // TweenLite.fromTo(item, 0.25, { backgroundSize: 'auto 100%' }, { backgroundSize: 'auto 120%' });
-        }
-
-        item.onmouseleave = function () {
-            TweenLite.to(item, 0.25, { backgroundSize: '-=25%' });
-            // TweenLite.fromTo(item, 0.25, { backgroundSize: 'auto 120%' }, { backgroundSize: 'auto 100%' });
-        }
-    }
-
-    Array.from(trailer).forEach(zoomHover);
-
     var pet = document.getElementsByClassName("pet");
 
     window.onscroll = function () {
