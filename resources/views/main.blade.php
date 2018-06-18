@@ -30,6 +30,8 @@
         <!-- Default Style -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         @yield('extra-css')
+        <!-- Mobile Responsive -->
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
         <!-- Google Open Sans -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->

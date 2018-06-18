@@ -1,4 +1,4 @@
-<nav>
+<nav id="navbar">
     <div class="menu-logo">
         <img src="{{ asset('img/logo.png') }}" alt="petify-logo">
     </div>

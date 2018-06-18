@@ -197,6 +197,11 @@ p {
     height: 2.6rem;
 }
 
+label {
+    font-size: 1.1rem;
+    line-height: 2.6rem;
+}
+
 .form-round input, .form-round button {
     border-radius: 10px;
 }

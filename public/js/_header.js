@@ -7,9 +7,9 @@ $(document).ready(function () {
     var navLogo = document.getElementsByClassName("menu-logo");
     // var navLayer = document.getElementById("menu-layer");
 
-    var isAnimationActive = !window.Util.isMobile();
+    isAnimationActive = !window.Util.isMobile();
 
-    function showNavbar() {
+    showNavbar = function () {
         TweenLite.to(navLogo, 0.25, { top: -10 })
         TweenLite.to(navItem, 0.25, { padding: 20 })
         TweenLite.to(navItem, 0.25, { paddingBottom: 15 })
@@ -33,11 +33,11 @@ $(document).ready(function () {
 
         window.addEventListener('scroll', function(e) {
             if (window.scrollY > threshold) {
-                if (!isShown) {
+                if (!isShown && isAnimationActive) {
                     showNavbar();
                 }
             } else {
-                if (isShown) {
+                if (isShown && isAnimationActive) {
                     hideNavbar();
                 }
             }

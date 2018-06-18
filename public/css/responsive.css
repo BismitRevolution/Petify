@@ -1,0 +1,6 @@
+/* Mobile Responsive */
+@media screen and (max-width: 576px) {
+    h1, h2, h3, h4, p {
+        font-size: 0.8em !important;
+    }
+}

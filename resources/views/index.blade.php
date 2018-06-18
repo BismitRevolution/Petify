@@ -113,7 +113,7 @@
                 </div>
                 <div class="panel-content small-12">
                     <div class="panel-title">
-                        <h3>Doggy</h3>
+                        <h3><a href="pet">Doggy</a></h3>
                     </div>
                     <div class="panel-subtitle">
                         <h5>Age 8, Female</h5>

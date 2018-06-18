@@ -1,0 +1,53 @@
+#search-bar {
+    z-index: 11;
+}
+
+#search-bar > div {
+    padding-top: 75px;
+}
+
+#pet-data, #contact {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#pet-data > div:first-child {
+    padding-bottom: 45px;
+}
+
+#pet-data h3 {
+    font-family: "Myfrida Regular";
+    font-size: 3rem;
+}
+
+#pet-pic {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.button.disabled {
+    opacity: 0.5;
+}
+
+#pet-data .panel {
+    padding: 10px;
+}
+
+#pet-data .title {
+    font-size: 2rem;
+}
+
+#pet-data .paragraph {
+    font-size: 1rem;
+}
+
+#contact h3 {
+    font-family: "Myfrida Regular";
+    font-size: 2.4rem;
+}
+
+#contact .panel {
+    margin-top: 35px;
+    padding: 35px;
+}
