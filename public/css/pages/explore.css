@@ -1,0 +1,19 @@
+#search-bar > div {
+    padding-top: 75px;
+}
+
+#pet-list .panel {
+    height: 300px;
+}
+
+#pet-list .pet {
+    visibility: hidden;
+    /* display: none; */
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+}

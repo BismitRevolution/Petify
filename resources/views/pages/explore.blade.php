@@ -1,9 +1,9 @@
 @extends('main')
 
-@section('title', "Pet Detail")
+@section('title', "Explore Pet")
 
 @section('extra-css')
-<link rel="stylesheet" href="{{ asset('css/pages/pet.css') }}">
+<link rel="stylesheet" href="{{ asset('css/pages/explore.css') }}">
 @endsection
 
 @section('content')
@@ -66,82 +66,30 @@
     </div>
 </div>
 
-<div id="pet-data" class="bg-light maroon">
-    <div class="grid-x container">
-        <div id="pet-pic" class="cell small-4 medium-3" style="background-image: url('../img/banner.jpg')">
-            <!-- <img src="{{ asset('img/banner.jpg') }}" alt=""> -->
-        </div>
-        <div class="cell small-1 medium-1">
+<div id="pet-list" class="grid-x grid-padding-x grid-padding-y container bg-maroon">
+    @foreach ($pets as $pet)
+    <div class="cell small-12 medium-6 large-4 pet">
+        <div class="panel grid-y maroon">
+            <div class="panel-image small-12" style="background-image: url({{ asset('img/banner.jpg') }})">
 
-        </div>
-        <div class="cell small-6 medium-8">
-            <div class="title">
-                <h3>{{ $pet->name }}</h3>
             </div>
-            <div class="subtitle">
-                <h5>@if ($pet->gender == 1)
-                    Male,
-                    @else
-                    Female,
-                    @endif
-                    {{ $pet->age }} th
-                </h5>
+            <div class="panel-content small-12">
+                <div class="panel-title">
+                    <h3><a href="pet">Doggy</a></h3>
+                </div>
+                <div class="panel-subtitle">
+                    <h5>Age 8, Female</h5>
+                </div>
+                <div class="panel-paragraph">
+                    <p>This dog is cute AF so much want this cutie oh my gosh</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <form class="form-round" action="/explore" method="get" onsubmit="return false;">
-            <div class="expanded button-group">
-                <button class="button bg-maroon round-start disabled" type="button" name="button">Intro</button>
-                <button class="button bg-maroon round-middle" type="button" name="button">Location</button>
-                <button class="button bg-maroon round-end" type="button" name="button">Other</button>
-            </div>
-        </form>
-        <div class="panel">
-            <div class="title">
-                Intro
-            </div>
-            <div class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacinia, augue sed venenatis cursus, eros massa consectetur urna, et porttitor diam nibh consectetur mi.
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="contact" class="container bg-maroon white">
-    <div class="title">
-        <h3 class="text-center">Adopt this pet!</h3>
-    </div>
-    <div class="panel purple">
-        <div class="paragraph" style="padding-left: 10px;">
-            <p>Adoption Form</p>
-        </div>
-        <form class="form-round" action="/" method="post">
-            <div class="form-inline grid-x grid-padding-x">
-                <label for="" class="cell small-4">Name*</label>
-                <input class="cell small-8" type="text" name="name" value="" required>
-            </div>
-            <div class="form-inline grid-x grid-padding-x">
-                <label for="" class="cell small-4">Email*</label>
-                <input class="cell small-8" type="email" name="email" value="" required>
-            </div>
-            <div class="form-inline grid-x grid-padding-x">
-                <label for="" class="cell small-4">Phone*</label>
-                <input class="cell small-8" type="number" name="phone" value="" required>
-            </div>
-            <div class="form-inline grid-x grid-padding-x">
-                <label for="" class="cell small-4">Address*</label>
-                <input class="cell small-8" type="text" name="address" value="" required>
-            </div>
-            <br>
-            <div class="text-center">
-                <button class="button bg-corn" type="button" name="button">SUBMIT REQUEST</button>
-            </div>
-        </form>
-    </div>
+    @endforeach
 </div>
 @endsection
 
 @section('extra-js')
-<script type="application/javascript" src="{{ asset('js/pages/pet.js') }}"></script>
+<script type="application/javascript" src="{{ asset('js/pages/explore.js') }}"></script>
 @endsection

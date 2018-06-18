@@ -1,7 +1,3 @@
-#search-bar {
-    z-index: 11;
-}
-
 #search-bar > div {
     padding-top: 75px;
 }

@@ -19,6 +19,8 @@ Route::get('/', 'PageController@index')->name('index');
 
 Route::get('/pet', 'PageController@get')->name('pet');
 
+Route::get('/explore', 'PageController@search')->name('explore');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

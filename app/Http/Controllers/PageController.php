@@ -25,4 +25,9 @@ class PageController extends Controller
         // dd($pet);
         return view('pages/pet')->with('pet', $pet);
     }
+
+    public function search() {
+        $pets = [0, 1, 2, 3, 4, 5];
+        return view('pages/explore')->with('pets', $pets);
+    }
 }

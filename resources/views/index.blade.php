@@ -53,10 +53,10 @@
             <h3 class="cell text-center">FIND PET</h3>
         </div>
         <div class="cell small-12">
-            <form class="form-round" action="index.html" method="post">
+            <form class="form-round" action="/explore" method="get">
                 <div class="form-inline grid-x">
                     <input class="cell small-10 round-start" type="text" name="search" value="" placeholder="Search pet">
-                    <button class="button cell small-2 bg-corn round-end" type="button"><i class="fas fa-search"></i></button>
+                    <button class="button cell small-2 bg-corn round-end" type="submit"><i class="fas fa-search"></i></button>
                 </div>
 
                 <div class="grid-x white">
