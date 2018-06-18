@@ -1,6 +1,6 @@
 <nav id="navbar">
     <div class="menu-logo">
-        <img src="{{ asset('img/logo.png') }}" alt="petify-logo">
+        <a href="/"><img src="{{ asset('img/logo.png') }}" alt="petify-logo"></a>
     </div>
     <ul class="menu simple">
         <li class="menu-item"><a href="#">LOGIN</a></li>
