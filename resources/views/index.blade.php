@@ -156,7 +156,7 @@
 <div id="article" class="banner bg-maroon white">
     <div class="container">
         <div class="title text-center">
-            <h3>Why we do this</h3>
+            <h3>NEWS & EVENTS</h3>
         </div>
         <div class="subtitle grid-x grid-padding-x grid-padding-y">
             @foreach ($articles as $article)

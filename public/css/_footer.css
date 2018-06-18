@@ -1,3 +1,19 @@
-#footer {
-    
+#footer .bg {
+    position: absolute;
+}
+
+#footer .content {
+    position: relative;
+    display: table;
+    margin: auto;
+}
+
+#footer .content .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#footer .content .logo img {
+    width: 35%;
 }
